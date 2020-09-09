@@ -9,11 +9,15 @@ import ContactUs from "./components/Pages/ContactUs";
 import SignUp from "./components/Pages/SignUp";
 import Marketing from "./components/Pages/Marketing";
 import Consulting from "./components/Pages/Consulting";
+import AppFooter from "./components/footer";
+import Scroll from "./components/ScrollToTop";
+import WelcomeBanner from "./components/WelcomeBanner";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <WelcomeBanner />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/services" component={Services} />
@@ -23,6 +27,9 @@ function App() {
         <Route path="/marketing" component={Marketing} />
         <Route path="/consulting" component={Consulting} />
       </Switch>
+
+      <AppFooter />
+      <Scroll showBelow={250} />
     </Router>
   );
 }
