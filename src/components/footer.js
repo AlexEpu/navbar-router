@@ -6,7 +6,7 @@ function AppFooter() {
     <div className="container-fluid">
       <div className="footer">
         <div className="logo">
-          <img src={require("../images/logo-footer.svg")} />
+          <img src={require("../images/logo-footer.svg")} alt="logo" />
           <a href="http://google.com"></a>
         </div>
 

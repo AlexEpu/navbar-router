@@ -13,10 +13,16 @@ import AppFooter from "./components/footer";
 import Scroll from "./components/ScrollToTop";
 import WelcomeBanner from "./components/WelcomeBanner";
 
+
+
+
+
 function App() {
+  
   return (
     <Router>
       <Navbar />
+      
       <WelcomeBanner />
       <Switch>
         <Route path="/" exact component={Home} />
@@ -29,7 +35,7 @@ function App() {
       </Switch>
 
       <AppFooter />
-      <Scroll showBelow={250} />
+      <Scroll showBelow={50} />
     </Router>
   );
 }
