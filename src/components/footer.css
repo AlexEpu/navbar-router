@@ -1,11 +1,15 @@
 .footer {
+    
     display: flex;
     width: 100%;
     height: 200px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(71, 71, 71);
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+    background: #212229;
+    /* background: #2c3e50; */
+    ;
     /* position: fixed; */
     bottom: 0;
 }
@@ -17,21 +21,22 @@
 }
 
 .copyright {
+    text-align: center;
     font-size: 0.8em;
     color: #fff;
-    margin-top: 155px;
+    margin-top: 0px;
 
 }
 
 .logo img {
     /* z-index: 20; */
-    position: absolute;
-    height: 120px;
+    /* position: absolute; */
+    height: 100px;
     transition: all 0.5s ease-in-out;
-    left: 50%;
-    margin-left: -60px;
-    top: 110%;
-    margin-top: -60px;
+    /* left: 50%;
+    margin-left: -50px;
+    top: 50%;
+    margin-top: -50px; */
 }
 
 /* .logo img:hover {

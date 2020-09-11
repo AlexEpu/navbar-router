@@ -3,35 +3,26 @@ import Navbar from "./components/Navbar";
 import "./App.css";
 import Home from "./components/Pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Services from "./components/Pages/Services";
-import Products from "./components/Pages/Products";
-import ContactUs from "./components/Pages/ContactUs";
+import Movies from "./components/Pages/Movies";
+import MyMovies from "./components/Pages/MyMovies";
+import MyAccount from "./components/Pages/MyAccount";
 import SignUp from "./components/Pages/SignUp";
-import Marketing from "./components/Pages/Marketing";
-import Consulting from "./components/Pages/Consulting";
 import AppFooter from "./components/footer";
 import Scroll from "./components/ScrollToTop";
-import WelcomeBanner from "./components/WelcomeBanner";
-
-
-
-
+//import WelcomeBanner from "./components/WelcomeBanner";
 
 function App() {
-  
   return (
     <Router>
       <Navbar />
+
       
-      <WelcomeBanner />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/services" component={Services} />
-        <Route path="/products" component={Products} />
-        <Route path="/contact-us" component={ContactUs} />
+        <Route path="/movies" component={Movies} />
+        <Route path="/mymovies" component={MyMovies} />
+        <Route path="/myaccount" component={MyAccount} />
         <Route path="/sign-up" component={SignUp} />
-        <Route path="/marketing" component={Marketing} />
-        <Route path="/consulting" component={Consulting} />
       </Switch>
 
       <AppFooter />

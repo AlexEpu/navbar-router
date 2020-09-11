@@ -62,7 +62,7 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/services"
+              to="/movies"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -72,7 +72,7 @@ function Navbar() {
           </li>
           <li className="nav-item">
             <Link
-              to="/products"
+              to="/mymovies"
               className="nav-links"
               onClick={closeMobileMenu}
             >
@@ -94,7 +94,7 @@ function Navbar() {
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
-              Sign Up
+             Join-Us
             </Link>
           </li>
         </ul>
@@ -102,9 +102,10 @@ function Navbar() {
         {/* <div className="right-icons"> */}
         <SearchBarNav />
         {/* <i className="fas fa-search fa-2x"></i> */}
-        <i className="fas fa-plus fa-2x"></i>
+        
+        <i className="fas fa-plus fa-lg"></i>
         <Link to="/sign-up">
-          <i className="fas fa-user user-icon fa-2x"></i>
+          <i className="fas fa-user user-icon fa-lg"></i>
         </Link>
         {/* </div> */}
       </nav>

@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import "./SearchBarNav.css";
 import { Button } from "./Button";
-import searchIcon from "./search-icon.png";
+import searchIcon from "../images/search-logo-nav.png";
 
 class SearchBarNav extends Component {
   constructor() {
@@ -32,9 +32,9 @@ class SearchBarNav extends Component {
       <div className="menu__right">
         <button
           onClick={this.showForm.bind(this)}
-          style={{ backgroundImage: "url(" + searchIcon + ")" }}
-          className="menu__search-button"
-        ></button>
+          style={{ background: "url(" + searchIcon + ")" }}
+          className="menu__search-button">
+      </button>
         {searchForm}
       </div>
     );
